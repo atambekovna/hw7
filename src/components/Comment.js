@@ -5,12 +5,13 @@ import './Comment.css'
 
 function Comment (props){
     return(
-        <CommentTextWrapper className='Comment'>
+      
+        <CommentTextWrapper className='Comment'  >
+        
 
+        <UserInfo author={props.author} />
 
-        <UserInfo author={props.author}/>
-
-        <div className='Comment-text'>
+        <div className='Comment-text'  >
 
           {props.text}
         <CommentDate date={props.date}/>
